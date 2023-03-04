@@ -1,0 +1,38 @@
+:root {
+    --pink-bg-color: #D84282;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu {
+    display: block;
+    width: 200px;
+    height: 30px;
+    position: relative;
+    background-color: var(--pink-bg-color);
+}
+
+#menu::before {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    top: -50px;
+    background-color: var(--pink-bg-color);
+}
+
+#menu::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    top: 50px;
+    background-color: var(--pink-bg-color);
+}
